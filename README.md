@@ -1,7 +1,3 @@
-Here's a sample `README.md` file for your project based on the provided document:
-
----
-
 # Return of the Snake Game on FPGA
 
 ### Authors:
