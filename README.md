@@ -75,6 +75,3 @@ The project is budgeted under **₹10,000**, with essential components listed be
 - [YouTube Video 1](https://youtu.be/fJycFrYZnUM?feature=shared)
 - [YouTube Video 2](https://youtu.be/yVLQgiavj5I?feature=shared)
 
----
-
-This README file gives a clear overview of your project, objectives, and relevant details. You can further adjust it based on your specific needs.
