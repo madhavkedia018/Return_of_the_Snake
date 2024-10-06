@@ -1,4 +1,4 @@
-# Return of the Snake Game on FPGA
+# Retro Snake Game on FPGA
 
 ### Mentors:
 - Madhav Kedia  
