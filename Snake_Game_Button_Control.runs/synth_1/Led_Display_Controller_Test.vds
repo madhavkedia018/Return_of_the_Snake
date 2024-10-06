@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Oct  5 12:50:17 2024
+# Process ID: 13664
+# Current directory: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1
+# Command line: vivado.exe -log Led_Display_Controller_Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Led_Display_Controller_Test.tcl
+# Log file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.vds
+# Journal file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1\vivado.jou
+# Running On        :Rohan-PC
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8362 MB
+# Swap memory       :12884 MB
+# Total Virtual     :21247 MB
+# Available Virtual :8700 MB
+#-----------------------------------------------------------
+source Led_Display_Controller_Test.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 514.250 ; gain = 202.707
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Led_Display_Controller_Test -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5328
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1384.828 ; gain = 449.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Led_Display_Controller_Test' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Snake_Position_Controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+WARNING: [Synth 8-11581] system task call 'monitor' not supported [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_Position_Controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_1s' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_1s' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_2' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_2' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_25Mhz' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_25Mhz' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Random_Generator' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Random_Generator' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Led_Display_Controller_Test' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:59]
+WARNING: [Synth 8-7129] Port rand_seed[19] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[18] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[17] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[16] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[15] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[14] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[13] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[12] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[11] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[10] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[9] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[8] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[7] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[6] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[5] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[4] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[3] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1496.523 ; gain = 560.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1496.523 ; gain = 560.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1496.523 ; gain = 560.812
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1496.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Led_Display_Controller_Test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Led_Display_Controller_Test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1597.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1597.367 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   11 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 6     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 1     
+	   5 Input   11 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 9     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP random1/rand_temp0, operation Mode is: C+A*(B:0x13edd).
+DSP Report: operator random1/rand_temp0 is absorbed into DSP random1/rand_temp0.
+DSP Report: operator random1/rand_temp0 is absorbed into DSP random1/rand_temp0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+ Sort Area is  random1/rand_temp0_0 : 0 0 : 1323 1323 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Random_Generator | C+A*(B:0x13edd) | 20     | 17     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Random_Generator | C+A*B       | 20     | 17     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    53|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     3|
+|5     |LUT2    |    30|
+|6     |LUT3    |    73|
+|7     |LUT4    |    65|
+|8     |LUT5    |   127|
+|9     |LUT6    |    91|
+|10    |FDCE    |    69|
+|11    |FDPE    |    12|
+|12    |FDRE    |    43|
+|13    |FDSE    |    13|
+|14    |IBUF    |     6|
+|15    |OBUF    |    15|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1597.367 ; gain = 560.812
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1597.367 ; gain = 661.656
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1597.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1597.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b486702a
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 55 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1597.367 ; gain = 1078.797
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1597.367 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Led_Display_Controller_Test_utilization_synth.rpt -pb Led_Display_Controller_Test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  5 12:51:04 2024...
