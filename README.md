@@ -37,34 +37,8 @@ This implementation explores core aspects of digital design, including:
 - Understand how to generate **VGA signals** for monitor display and how to interface with input devices.
 - Learn debugging techniques for FPGA hardware.
 
-## Timeline
 
-| Phase   | Time       | Milestone                          |
-|---------|------------|------------------------------------|
-| Phase 1 | October    | Learn FSM and key concepts         |
-|         | November   | Basics of FPGA programming         |
-| Phase 2 | December   | Module synthesis                   |
-|         | January    | VGA implementation                 |
-| Phase 3 | February   | Running design                     |
-|         | March      | Testing and modification           |
 
-## Budget
-The project is budgeted under **₹10,000**, with essential components listed below:
-
-| Item                      | Price (₹) |
-|----------------------------|-----------|
-| Altera DE1-Soc (Available)  | 0         |
-| Nexys 4 Artix 7 (Available) | 0         |
-| USB cable (Included)        | 0         |
-| VGA to VGA cable            | 199       |
-| HDMI to USB adapter         | 1305      |
-| VGA to HDMI cable           | 325       |
-| LED matrix                  | 499       |
-| VGA monitor                 | 2799      |
-| PS2 keyboard                | 499       |
-| 4-way joystick              | 999       |
-| Jumper cables               | 59        |
-| **Total**                   | **6684**  |
 
 ## References
 - [Drive Link for Report](https://drive.google.com/file/d/1cGgnBA8dDdktOeK71ILNqDV473CABYY8/view?usp=drivesdk)
