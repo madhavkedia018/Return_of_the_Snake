@@ -1,6 +1,6 @@
 # Return of the Snake Game on FPGA
 
-### Authors:
+### Mentors:
 - Madhav Kedia  
 - Rohan Abhilash S.  
 - Omkar Chougule  
